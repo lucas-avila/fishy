@@ -32,7 +32,7 @@ Alongside those eight, Jev produces one overall **scam score** from 0–100%, wh
 
 ## Setup
 
-You don't need to be a developer to install this, but you do need to build it yourself. Fishy isn't published on extension stores.
+Fishy isn't published on any extension store, so you build it from source and load it into your browser.
 
 **Prerequisites:**
 
