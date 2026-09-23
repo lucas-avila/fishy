@@ -1,0 +1,32 @@
+{
+  "name": "fishy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "TARGET=chrome vite",
+    "dev:firefox": "TARGET=firefox vite",
+    "build": "npm run build:chrome && npm run build:firefox && npm run build:safari",
+    "build:chrome": "TARGET=chrome vite build",
+    "build:firefox": "TARGET=firefox vite build",
+    "build:safari": "TARGET=safari vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "icons": "node scripts/icons.mjs",
+    "readme-logo": "node scripts/readme-logo.mjs",
+    "firefox:run": "web-ext run --source-dir dist/firefox --target firefox-desktop",
+    "firefox:lint": "web-ext lint --source-dir dist/firefox",
+    "firefox:package": "web-ext build --source-dir dist/firefox --artifacts-dir dist/firefox-artifacts --overwrite-dest",
+    "safari:convert": "bash scripts/safari-convert.sh"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@types/chrome": "^0.3.0",
+    "happy-dom": "^20.14.5",
+    "sharp": "^0.34.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11",
+    "web-ext": "^10.7.0"
+  }
+}
