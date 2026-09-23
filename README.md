@@ -150,8 +150,6 @@ A content script (`src/content.ts`, `src/extract`) reads the DOM of the Gmail ta
 | `npm run safari:convert` | Runs Apple's converter to create an Xcode project in `build/safari/`. |
 | `npm run test` | Runs the Vitest suite. |
 | `npm run typecheck` | Runs `tsc --noEmit`. |
-| `npm run icons` | Regenerates `public/logo.png` and `public/icons/*.png` from `assets/logo_fishy.png`. |
-| `npm run readme-logo` | Regenerates `assets/readme-logo.png` and `assets/readme-logo-dark.png` from `assets/logo_fishy.png`. |
 
 Project layout:
 
