@@ -172,4 +172,4 @@ Project layout:
 
 ## License
 
-No license chosen yet.
+MIT, see [LICENSE](LICENSE). The bundled Quicksand font is licensed under the SIL Open Font License 1.1 (`public/fonts/OFL.txt`).
