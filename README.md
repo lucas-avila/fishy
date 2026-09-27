@@ -9,6 +9,12 @@
 > [!WARNING]
 > Fishy is an experiment. Its verdicts come from an AI model (TypeSafe's Jev) that can misjudge an email in either direction: it can flag a legitimate email as suspicious, and it can miss a real phishing attempt, including one deliberately crafted to fool classifiers like it. Use your own judgement on every email. Never treat a "Looks fine" result as permission to enter credentials, click a link, or send money. Fishy is a second opinion, not a guarantee.
 
+<p align="center">
+  <img src="assets/screenshot-popup.png" height="220" alt="Fishy popup with a Check this email button">
+  &nbsp;
+  <img src="assets/screenshot-options.png" height="220" alt="Fishy options page with the API key field and a note on what leaves your browser">
+</p>
+
 ## What it does
 
 Fishy is a browser extension (Manifest V3) that runs in Chrome, Firefox, and Safari. It reads the email you currently have open in Gmail, sends its contents to TypeSafe's Jev model, and shows you a verdict with the reasoning behind it. There's no sign-up, no Fishy backend, and no account: you bring your own TypeSafe API key, and the request goes straight from your browser to TypeSafe. Everything runs on demand: nothing is scanned automatically, and nothing is stored except your key and settings.
